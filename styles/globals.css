@@ -1,9 +1,13 @@
+:root {
+  --font-family: "Wotfard", Futura, -apple-system, sans-serif;
+  --font-weight-bold: 600;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--font-family);
 }
 
 a {
@@ -13,4 +17,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+section {
+  margin: 32px auto;
+  max-width: 48rem;
+  padding: 0 16px;
 }
