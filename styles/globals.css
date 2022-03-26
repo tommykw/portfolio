@@ -15,12 +15,16 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
 }
 
 section {
   margin: 32px auto;
-  max-width: 48rem;
+  max-width: 62rem;
   padding: 0 16px;
 }

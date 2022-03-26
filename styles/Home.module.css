@@ -1,9 +1,97 @@
-.container {
-  /* padding: 0 2rem; */
+.container-root {
+  overflow-x: hidden;
 }
 
-.main_container {
+.container-content {
   padding: 0 2rem;
+}
+
+.header-frame {
+  width: 100%;
+  height: 80vh;
+  background-image: url(/image/header/cover.png);
+  background-position: center;
+}
+
+.header-frame img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.header-text {
+  color: #fff;
+}
+
+.about-me-description {
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  text-align: left;
+  word-break: break-word;
+  line-break: normal;
+  white-space: normal;
+}
+
+.article-card {
+  max-width: 280px;
+  max-height: 520px;
+  padding: 0 0 1rem 0;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.article-card h3 {
+  margin: 0 0 0rem 1rem;
+}
+
+.article-card p {
+  margin: 0 1rem;
+  line-height: 1.5;
+}
+
+.article-card img {
+  object-fit: contain;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.skill-box {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.skill-box img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.project-box {
+  max-width: 442px;
+  max-height: 130px;
+}
+
+.project-box img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.carrer-container {
+  margin-top: 3rem;
+}
+
+.carrer-box {
+  border-radius: 10px;
+  text-align: left;
+}
+
+.carrer-box-date {
+  font-weight: var(--font-weight-bold);
 }
 
 .footer {
@@ -22,177 +110,7 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.description {
-  margin: 0rem 0;
-  line-height: 1.5;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.card {
-  max-width: 280px;
-  max-height: 520px;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-}
-
-.card h3 {
-  margin: 0 0 0rem 1rem;
-}
-
-.card p {
-  margin: 0 1rem;
-  line-height: 1.5;
-}
-
-.logo {
+.footer-logo {
   height: 1em;
   margin-left: 0.5rem;
-}
-
-.cluster {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space, 1rem);
-  justify-content: center;
-  align-items: center;
-}
-
-.clusterbox {
-  box-sizing: border-box;
-  background-color: inherit;
-  font-family: inherit;
-  color: inherit;
-  overflow-wrap: break-word;
-  margin: 2rem;
-  padding: 4rem;
-  background-color: #0070f3;
-  border: 0 solid;
-}
-
-.center {
-  max-width: 60ch;
-  margin: 0 auto;
-}
-
-.cover {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  min-height: 50vh;
-  box-sizing: border-box;
-}
-
-.stack {
-  margin-top: 1rem;
-}
-
-.stack > h1 {
-  color: #ffffff;
-}
-
-.headerimage {
-  background-color: #000000;
-}
-
-.grid {
-  display: flex;
-  flex-direction: row;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-}
-
-.grid.aboveMin {
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-}
-
-.output_image {
-  object-fit: contain;
-  width: 100%;
-}
-
-.profileicon {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  border-radius: 50%;
-}
-
-.header {
-  width: 100%;
-  height: 80vh;
-  background-image: url(/cover2.png);
-  background-position: center;
-}
-
-.textprimary {
-  color: #fff;
-}
-
-.cluster {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: calc(1rem / 2 * -1);
-  flex-wrap: wrap;
-}
-
-.logoimage {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-}
-
-.flex1 {
-  flex: 1;
-}
-
-.linebreak {
-  line-break: auto;
-  word-break: break-all;
-}
-
-.output_github {
-  object-fit: contain;
-  max-width: 442px;
-  max-height: 130px;
-  width: 100%;
-}
-
-.carrer_box {
-  /* border: 10px solid #eaeaea;
-  border-color: #eaeaea; */
-  border-radius: 10px;
-  text-align: left;
-}
-
-.carrer_box_date {
-  font-weight: var(--font-weight-bold);
-}
-
-.skill_box {
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
 }
