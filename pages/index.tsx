@@ -18,7 +18,7 @@ export default function Home() {
       <header>
         <Frame className={styles["header-frame"]} ratio="1:3">
           <Box>
-            <Center andText gutters="0" intrinsic={false} max="var(--measure)">
+            <Center andText>
               <h1>Beyond Average</h1>
               <Image src="/image/icon.png" width="64" height="64" alt="icon" />
               <div className={styles["header-text"]}>tommykw</div>
@@ -30,7 +30,7 @@ export default function Home() {
 
       <main className={styles["container-content"]}>
         <section>
-          <Center andText gutters="0" intrinsic={false} max="var(--measure)">
+          <Center andText>
             <h2 id="about_me">About Me</h2>
             <p className={styles["about-me-description"]}>
               Hi, my name is Kenji Tomita. I am a Web Developer based in Tokyo,
@@ -49,9 +49,9 @@ export default function Home() {
         </section>
 
         <section>
-          <Center andText gutters="0" intrinsic={false} max="820px">
+          <Center andText max="820px">
             <h2 id="articles">Articles</h2>
-            <Grid isWide={true} min="250px" space="1rem">
+            <Grid min="250px" space="1rem">
               <div className={styles["article-card"]}>
                 <a href="https://zenn.dev/tommykw">
                   <div>
@@ -101,9 +101,9 @@ export default function Home() {
         </section>
 
         <section>
-          <Center andText gutters="0" intrinsic={false} max="820px">
+          <Center andText max="820px">
             <h2 id="projects">Projects</h2>
-            <Grid isWide={true} min="250px" space="1rem">
+            <Grid min="250px" space="1rem">
               <Box className={styles["project-box"]}>
                 <a href="https://github.com/tommykw/pull-request-reviewer-reminder-action">
                   <picture>
@@ -124,12 +124,12 @@ export default function Home() {
         </section>
 
         <section>
-          <Center andText gutters="5" intrinsic={false} max="20ch">
+          <Center andText max="180px">
             <h2 id="skills">Skills</h2>
             <br />
             <Cluster align="center" justify="center" space="2rem">
               <div className={styles["skill-box"]}>
-                <Box borderWidth="0px" invert={false} padding="var(--s0)">
+                <Box>
                   <a href="https://www.typescriptlang.org/">
                     <Image
                       src="/image/skill/ts-logo.png"
@@ -140,7 +140,7 @@ export default function Home() {
                   </a>
                 </Box>
 
-                <Box borderWidth="0px" invert={false} padding="var(--s0)">
+                <Box>
                   <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">
                     <Image
                       src="/image/skill/css-logo.png"
@@ -151,7 +151,7 @@ export default function Home() {
                   </a>
                 </Box>
 
-                <Box borderWidth="0px" invert={false} padding="var(--s0)">
+                <Box>
                   <a href="https://reactjs.org/">
                     <Image
                       src="/image/skill/react-logo.png"
@@ -162,7 +162,7 @@ export default function Home() {
                   </a>
                 </Box>
 
-                <Box borderWidth="0px" invert={false} padding="var(--s0)">
+                <Box>
                   <a href="https://kotlinlang.org/">
                     <Image
                       src="/image/skill/kotlin-logo.png"
@@ -178,19 +178,12 @@ export default function Home() {
         </section>
 
         <section>
-          <Center
-            className={styles["carrer-container"]}
-            andText
-            gutters="0"
-            intrinsic={false}
-            max="50ch"
-          >
+          <Center className={styles["carrer-container"]} andText max="500px">
             <h2 id="carrer">Carrer</h2>
-            <Stack recursive={false} space="1rem">
+            <Stack space="1rem">
               <Box
                 className={styles["carrer-box"]}
                 borderWidth="1px #e2e8f0"
-                invert={false}
                 padding="1em"
               >
                 <p className={styles["carrer-box-date"]}>2016 - present</p>
@@ -199,7 +192,6 @@ export default function Home() {
               <Box
                 className={styles["carrer-box"]}
                 borderWidth="1px #e2e8f0"
-                invert={false}
                 padding="1em"
               >
                 <p className={styles["carrer-box-date"]}>2014 - 2016</p>
@@ -208,7 +200,6 @@ export default function Home() {
               <Box
                 className={styles["carrer-box"]}
                 borderWidth="1px #e2e8f0"
-                invert={false}
                 padding="1em"
               >
                 <p className={styles["carrer-box-date"]}>2010 - 2014</p>
@@ -217,7 +208,6 @@ export default function Home() {
               <Box
                 className={styles["carrer-box"]}
                 borderWidth="1px #e2e8f0"
-                invert={false}
                 padding="1em"
               >
                 <p className={styles["carrer-box-date"]}>2008 - 2010</p>
