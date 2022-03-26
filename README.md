@@ -1,3 +1,5 @@
+## Portfolio
+This repository is a technical portfolio built using Next.js.
 
 ## Getting Started
 
